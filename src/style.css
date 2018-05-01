@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+
+body{
+    background: url("images/football_pitch-wallpaper-1152x720.jpg");
+    padding:50px;
+    font-family: monospace;
+    font-size: 14px;
+}
+a{
+    color: rgb(255, 251, 254);
+    font-weight:bold;
+    text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+#all {
+	width:500px;
+	height:250px;
+	margin:0 auto;
+}
+#header {
+	position: relative;
+}
+
+#canvas {
+	position:relative;
+    background-color: #DDD;
+	height: 250px;
+	width: 500px;
+    border:4px solid #f3f5f5;
+    border-top: 50px solid #f5f0f4;
+    margin-bottom:20px;
+    border-radius: 4px;
+    right: 3px;
+}
+
+#users {
+    text-align: center;
+    height:30px;
+    line-height:30px;
+    position:relative;
+    bottom:22px;
+}
+
+#users span{
+    height: 30px;
+    position: relative;
+}
+#create {
+    float: left;
+	font-size: medium;
+    display: none;
+}
+#join {
+    float: right;
+	font-size: medium;
+    display: none;
+}
+
+#start {
+    position: relative;
+	top: 25px;
+	text-decoration: none;
+	font-weight: bold;
+    display: none;
+	font-size: large;
+}
+
+#connect {
+    position: relative;
+	top: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: large;
+}
+
+#chat {
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+#start,#connect:hover{
+	text-decoration: underline;
+}
+
+h3{
+    color: rgb(255, 251, 254);
+	top: 20px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+#log {
+    text-align: left;
+    color: rgb(255, 251, 254);
+    margin-top: 5%;
+}
+
+#join-input {
+    display: none;
+    float: right;
+    border-style: dashed;
+    margin-top: 5px;
+    font-size: medium;
+    width: 35%;
+    background-color: #f5f0f4;
+    text-align: center;
+}
+
+#scoreboard {
+    font-size: xx-large;
+    position: relative;
+    top: 45px;
+    z-index: 999;
+    color: teal;
+    display: none;
+}
+
+#scoreboard span:first-of-type {
+    float: left;
+    padding-left: 3%;
+}
+
+#scoreboard span:last-of-type {
+    float:right;
+    padding-right: 3%;
+}

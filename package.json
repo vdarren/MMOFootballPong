@@ -1,0 +1,14 @@
+{
+  "name": "MMO",
+  "version": "0.1.0",
+  "description": "MMO Coursework",
+  "author": "Darren Williamson",
+  "keywords": [
+  ],
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3",
+    "socket.io": "^1.7.4"
+  },
+  "license": "MIT"
+}
