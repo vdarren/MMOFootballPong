@@ -32,7 +32,7 @@ var Server = (function(){
 
             // Send HTML headers and message
             res.header("Access-Control-Allow-Origin", "*")
-            res.sendFile(__dirname + '/index.html');
+            res.sendFile(__dirname + '/views/index.html');
         },
 
 

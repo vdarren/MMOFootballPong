@@ -1,6 +1,4 @@
-/**
- * Game Name Space
- */
+
 var Game = function(canvas) {
 
     // Controls the game start
@@ -193,7 +191,7 @@ var Game = function(canvas) {
     };
 
     /**
-     * Player exited the game. We must stop too.
+     * Player exit the game.
      */
     this.playerExitedTheGame = function () {
 

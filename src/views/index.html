@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>MMO FH</title>
-    <link media="all" type="text/css" rel="stylesheet" href="style.css">
+    <link media="all" type="text/css" rel="stylesheet" href="../assets/style.css">
 </head>
 <script type="text/javascript">
 
@@ -23,6 +23,12 @@
                 </form>
             </div>
         </div>
+
+
+        <div id="marketingWrap" class="prefix-10 grid-80 suffix-10">
+            <div id="marketWrap" class="grid-70">
+            </div>
+        </div>
         </main>
     </div>
     <div id="scoreboard">
@@ -37,7 +43,7 @@
 
 
 
-        <a id="connect" href="#" >Connect</a>
+        <a id="connect" href="#" >Join the server!</a>
         <a id="create" href="#" >Create Room</a>
         <a id="join" href="#" >Join Room</a>
         <a id="start" href="#" >Start</a>
@@ -67,7 +73,7 @@
                     $('#nickWrap').hide();
                     $('#contentWrap').show();
                 } else {
-                    $nickError.html('A wizard with that name already exists in this realm');
+                    $nickError.html('A user with that name already exists');
                 }
             });
             $nickBox.val('');
@@ -90,9 +96,9 @@
     });
 </script>
 
-<script type="text/javascript" src="canvas.js"></script>
-<script type="text/javascript" src="connection.js"></script>
-<script type="text/javascript" src="game.js"></script>
-<script type="text/javascript" src="client.js"></script>
+<script type="text/javascript" src="../game/canvas.js"></script>
+<script type="text/javascript" src="../game/connection.js"></script>
+<script type="text/javascript" src="../game/game.js"></script>
+<script type="text/javascript" src="../game/client.js"></script>
 </body>
 </html>

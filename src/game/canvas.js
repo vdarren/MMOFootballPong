@@ -4,25 +4,25 @@
 var Canvas = function() {
 
     var that = this,
-    // Canvas Element Object
+
     _canvasObj,
-    // Canvas Context
+
     _canvasCtx,
-    // Canvas Dimensions
+
     WIDTH,
     HEIGHT,
-    // Limits of mouse moviments
+
     canvasMinX,
     canvasMaxX,
     canvasMinY,
     canvasMaxY;
 
-    /* right blade */
+
     this.player1 = {
         x : 0,
         y : 0
     },
-    /* left blade */
+
     this.player2 = {
         x : 0,
         y : 0
@@ -31,20 +31,23 @@ var Canvas = function() {
     DEFAULT_DX = -8,
     DEFAULT_DY = 16,
 
-    /* Ball object */
+
     this.ball = {
-        // Position
+
         x  : 0,
         y  : 0,
 
-    // Displacement
+
         dx : DEFAULT_DX,
         dy : DEFAULT_DY,
     },
 
-    // Paddles Dimensions
+
     this.paddle_h = 40,
     this.paddle_w = 3,
+
+        // create the ball
+        //circle(this.paddle_h.x, this.paddle_w.y, 5),
 
     /*
      * Canvas clear function. It is called on each
@@ -69,16 +72,6 @@ var Canvas = function() {
         _canvasCtx.fill();
     },
 
-
-    /*
-     * Rectangle creation function
-     *
-     * param x, y : left upper corner coordinates of the rectangle
-     * param w : Define rectangle width
-     * param h : Define rectangle heigh
-     * return : drawed rectangle on canvas
-     */
-
     rect = function(x, y, w, h) {
         _canvasCtx.beginPath();
         _canvasCtx.rect(x,y,w,h);
@@ -86,10 +79,6 @@ var Canvas = function() {
         _canvasCtx.fill();
     },
 
-
-    /*
-     * Defines the canvas bitmap dimensions
-     */
     this.setDimensions = function (width, height) {
 
         if(!width || !height) {
@@ -100,10 +89,6 @@ var Canvas = function() {
         _canvasObj.setAttribute('height', height);
     },
 
-
-    /*
-     * Sets positions of the players paddles
-     */
     _setPaddles = function () {
 
         // Put paddles on the abscissa: 5 px left, -5 px right
@@ -115,9 +100,6 @@ var Canvas = function() {
     },
 
 
-    /*
-     * Define canvas limits horizontally
-     */
     _setLimits = function () {
         canvasMinX = _canvasObj.offsetLeft;
         canvasMaxX = canvasMinX + _canvasObj.width;
