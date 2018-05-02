@@ -132,3 +132,51 @@ h3{
     float:right;
     padding-right: 3%;
 }
+
+#nickWrap{
+    background-color: #c0b99f;
+    margin-bottom:20px;
+    border-radius: 4px;
+    right: 3px;
+}
+
+#contentWrap{
+    position: absolute;
+    top: 54px;
+    right: 0;
+    left: 520px;
+    width: 200px;
+    height: 70px;
+    border: 3px solid #73AD21;
+    background-color: #DDD;
+    margin-bottom:20px;
+    border-radius: 4px;
+    right: 3px;
+}
+
+#chatWrap{
+    background-color: #DDD;
+    padding: 10px;
+    margin-bottom:20px;
+    border-radius: 4px;
+    right: 3px;
+}
+
+#chat{
+    height: 200px;
+    background-color: #f5f0f4;
+    margin-bottom:40px;
+    border-radius: 4px;
+    right: 3px;
+}
+
+body {
+    margin: auto;
+    width: 960px;
+}
+
+
+
+
+
+
